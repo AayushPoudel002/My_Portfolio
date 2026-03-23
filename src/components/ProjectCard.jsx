@@ -5,11 +5,22 @@ export function ProjectCard({ project }) {
     <article className="projectCard glassCard glassCardHover">
       {/* Project Image */}
       <div className="projectCard__image">
-        <div className="projectCard__image-placeholder">
-          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-            <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/>
-          </svg>
-        </div>
+        {/* Real Image */}
+        <img
+          src={project.image}
+          alt={project.title}
+          className="projectCard__img"
+        />
+
+        {/* Fallback placeholder (only if image missing) */}
+        {!project.image && (
+          <div className="projectCard__image-placeholder">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+              <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/>
+            </svg>
+          </div>
+        )}
+
         {/* Overlay on Hover */}
         <div className="projectCard__overlay">
           <a
@@ -23,6 +34,7 @@ export function ProjectCard({ project }) {
             </svg>
             Code
           </a>
+
           <a
             href={project.liveUrl}
             target="_blank"
