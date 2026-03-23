@@ -1,0 +1,126 @@
+.projects__wrapper {
+  max-width: 72rem;
+  margin: 0 auto;
+}
+
+.projects__header {
+  margin-bottom: 3rem;
+}
+
+.projects__tag {
+  display: inline-block;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+  color: var(--color-primary);
+}
+
+.projects__subtitle {
+  max-width: 42rem;
+  margin: 0 auto;
+}
+
+/* Filters */
+.projects__filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 3rem;
+}
+
+/* Grid */
+.projects__grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .projects__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .projects__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Loading State */
+.projects__loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  color: var(--color-muted-foreground);
+}
+
+.projects__spinner {
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 1rem;
+  border: 3px solid var(--color-border);
+  border-top-color: var(--color-primary);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Error State */
+.projects__error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  text-align: center;
+  color: var(--color-destructive);
+}
+
+.projects__error svg {
+  margin-bottom: 1rem;
+  opacity: 0.5;
+}
+
+.projects__error h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  color: var(--color-foreground);
+}
+
+.projects__error p {
+  margin-bottom: 1.5rem;
+  color: var(--color-muted-foreground);
+}
+
+/* Empty State */
+.projects__empty {
+  padding: 4rem 2rem;
+  text-align: center;
+  color: var(--color-muted-foreground);
+}
+
+/* Footer */
+.projects__footer {
+  margin-top: 3rem;
+}
+
+.projects__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-muted-foreground);
+  transition: color var(--transition-base);
+}
+
+.projects__link:hover {
+  color: var(--color-primary);
+}

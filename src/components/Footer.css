@@ -1,0 +1,105 @@
+.footer {
+  position: relative;
+  padding: 3rem 0;
+  background-color: hsla(222, 47%, 9%, 0.5);
+  border-top: 1px solid var(--glass-border);
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  max-width: 56rem;
+  margin: 0 auto;
+}
+
+/* Logo */
+.footer__logo {
+  font-family: var(--font-mono);
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--color-foreground);
+  transition: opacity var(--transition-base);
+}
+
+.footer__logo:hover {
+  opacity: 0.8;
+}
+
+.footer__logo-bracket {
+  background: linear-gradient(135deg, var(--text-gradient-from), var(--text-gradient-to));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Social Links */
+.footer__socials {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer__social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem;
+  border: 1px solid var(--glass-border);
+  border-radius: 50%;
+  color: var(--color-muted-foreground);
+  transition: all var(--transition-base);
+}
+
+.footer__social-link:hover {
+  border-color: hsla(173, 80%, 50%, 0.5);
+  background-color: hsla(173, 80%, 50%, 0.1);
+  color: var(--color-primary);
+}
+
+/* Copyright */
+.footer__copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: center;
+  font-size: 0.875rem;
+  color: var(--color-muted-foreground);
+}
+
+.footer__credit {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.footer__heart {
+  color: var(--color-primary);
+}
+
+/* Back to Top */
+.footer__back-top {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--color-muted-foreground);
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color var(--transition-base);
+}
+
+.footer__back-top:hover {
+  color: var(--color-primary);
+}
+
+.footer__back-top svg {
+  transition: transform var(--transition-base);
+}
+
+.footer__back-top:hover svg {
+  transform: translateY(-2px);
+}

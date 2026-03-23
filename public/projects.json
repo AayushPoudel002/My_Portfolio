@@ -1,0 +1,92 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Portfolio Website",
+      "description": "A modern responsive personal portfolio showcasing my skills, projects, and experience. Built using React, HTML, CSS with clean UI and smooth animations.",
+      "image": "/placeholder.svg",
+      "tech": ["React", "HTML", "CSS"],
+      "category": "Frontend",
+      "githubUrl": "https://github.com/USERNAME/portfolio",
+      "liveUrl": "https://portfolio.vercel.app",
+      "featured": true
+    },
+    {
+      "id": 2,
+      "title": "NEPSE Stock Market Analysis System",
+      "description": "Data science-based analysis system for NEPSE stock market including data cleaning, visualization, trend analysis, and predictive insights using Python.",
+      "image": "/placeholder.svg",
+      "tech": ["Python", "Pandas", "NumPy", "Matplotlib", "Data Science"],
+      "category": "Data Science",
+      "githubUrl": "https://github.com/USERNAME/nepse-stock-analysis",
+      "liveUrl": "https://github.com/USERNAME/nepse-stock-analysis",
+      "featured": true
+    },
+    {
+      "id": 3,
+      "title": "Todo App with Local Storage",
+      "description": "A feature-rich todo application with task management, filtering, and persistent storage using browser localStorage.",
+      "image": "/placeholder.svg",
+      "tech": ["JavaScript", "HTML5", "CSS3", "localStorage"],
+      "category": "Frontend",
+      "githubUrl": "https://github.com/USERNAME/todo-app",
+      "liveUrl": "https://todo-app.vercel.app",
+      "featured": false
+    },
+    {
+      "id": 4,
+      "title": "Movie Recommendation System",
+      "description": "Machine learning-based movie recommendation system using collaborative filtering and content-based filtering techniques.",
+      "image": "/placeholder.svg",
+      "tech": ["Python", "Pandas", "Scikit-learn", "Machine Learning"],
+      "category": "Data Science",
+      "githubUrl": "https://github.com/USERNAME/movie-recommendation",
+      "liveUrl": "https://github.com/USERNAME/movie-recommendation",
+      "featured": true
+    },
+    {
+      "id": 5,
+      "title": "Hospital Management System",
+      "description": "Database-driven hospital management system with patient records, doctor management, appointments, and billing system using SQL Server.",
+      "image": "/placeholder.svg",
+      "tech": ["SQL Server", "DBMS", "Database Design", "SQL"],
+      "category": "Database",
+      "githubUrl": "https://github.com/USERNAME/hospital-management-system",
+      "liveUrl": "https://github.com/USERNAME/hospital-management-system",
+      "featured": true
+    },
+    {
+      "id": 6,
+      "title": "E-commerce Website with Database Integration",
+      "description": "Full-stack e-commerce platform with product listing, cart system, authentication, and database integration using React and Django.",
+      "image": "/placeholder.svg",
+      "tech": ["React", "Django", "SQL", "REST API"],
+      "category": "Full-stack",
+      "githubUrl": "https://github.com/USERNAME/ecommerce-website",
+      "liveUrl": "https://ecommerce-app.vercel.app",
+      "featured": true
+    },
+    {
+      "id": 7,
+      "title": "Spaceship Game",
+      "description": "2D arcade-style spaceship shooting game built using Python and Pygame with enemy AI, collision detection, and score tracking.",
+      "image": "/placeholder.svg",
+      "tech": ["Python", "Pygame", "Game Development", "OOP"],
+      "category": "Python",
+      "githubUrl": "https://github.com/USERNAME/spaceship-game",
+      "liveUrl": "https://github.com/USERNAME/spaceship-game",
+      "featured": true
+    },
+    {
+      "id": 8,
+      "title": "Jewellery Shop Website",
+      "description": "Frontend website for a jewellery shop with modern UI design, product showcase, and responsive layout.",
+      "image": "/placeholder.svg",
+      "tech": ["HTML", "CSS", "JavaScript"],
+      "category": "Frontend",
+      "githubUrl": "https://github.com/USERNAME/jewellery-shop",
+      "liveUrl": "https://jewellery-shop.vercel.app",
+      "featured": false
+    }
+  ]
+}
